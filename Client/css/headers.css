@@ -1,0 +1,47 @@
+body{
+    width: 100%;
+}
+
+#head{
+    width: 100%;
+    height: 60px;
+    
+}
+
+
+#head .center{
+    height: 50px;
+    width: 1200px;
+    margin: 0 auto;
+
+
+}
+#head .center h1{
+    font-size: 40px;
+    font-family: yrd;
+    float: left;
+    padding: 0;
+    margin: 0;
+    color: #409EFF;
+}
+
+#header{
+    border-bottom: 1px solid #dcdfe6;
+    height: auto;
+    
+}
+#header ul{
+    float: left;
+    border: 0px;
+    margin-left: 30px;
+    line-height: 50px;
+}
+#header ul li{
+    height: 50px;
+    line-height: 50px;
+}
+#header input{
+    float: right;
+    margin-top: 10px;
+
+}

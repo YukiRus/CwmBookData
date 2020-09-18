@@ -1,0 +1,67 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>首页 - 刺猬猫数据</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.ciweimao.com/resources/image/icon/CiWeiMao_Icon_32_R.png">
+    
+    <!-- javascript文件 -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="https://unpkg.com/element-ui@2.13.2/lib/index.js"></script>
+
+    <!-- css文件 -->
+    <link rel="stylesheet" href="css/headers.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui@2.13.2/lib/theme-chalk/index.css">
+
+
+    
+    <style>
+        @font-face {
+            font-family: "yrd";
+            src: url("fonts/yrd.ttf");
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="head">
+        <div id="header" class="center">
+            <el-row>
+                <el-col :span="5"><h1>刺猬猫数据</h1></el-col>
+                <el-col :span="14">
+                    <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="">
+                        <el-menu-item index="1">首页</el-menu-item>
+                    </el-menu>
+                </el-col>
+                <el-col :span="5"><el-input v-model="input" placeholder="键入书名/书号以搜索" size="small"></el-input></el-col>
+            </el-row>
+        </div>
+    </div>
+    <div id="app">
+        {{test}}
+    </div>
+    <script>
+        //Vue处理类
+        var head = new Vue({
+            el:"#header",
+            data:{
+                activeIndex:"1",
+                input:""
+            },
+            methods:{
+                handleSelect:function(){
+                    alert("??");
+                }
+            }
+        });
+
+        var app = new Vue({
+            el:"#app",
+            data:{
+                test:"测试"
+            }
+        });
+    </script>
+</body>
+</html>
